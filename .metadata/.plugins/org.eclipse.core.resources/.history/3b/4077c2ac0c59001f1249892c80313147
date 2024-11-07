@@ -1,0 +1,9 @@
+package gola;
+
+public class hola {
+	 public static void main(String args[])
+	 {
+	    String saludo = "hola 11";
+	    System.out.println(saludo);
+	 } 
+}

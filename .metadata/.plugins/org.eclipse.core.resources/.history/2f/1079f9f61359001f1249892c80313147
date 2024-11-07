@@ -1,0 +1,14 @@
+package gola;
+
+import java.util.Scanner;
+
+public class hola {
+    
+    public static void main(String[] args) {
+    	Scanner scanner = new Scanner(System.in);
+    	System.out.println("ingrese palabra que quiere mostrar");
+    	String palabra = scanner.toString();
+    	System.out.println(palabra);
+    }
+}
+

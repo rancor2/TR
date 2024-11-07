@@ -1,0 +1,14 @@
+package gola;
+
+public class hola {
+    
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 20;
+       
+        System.out.println("la suma es "+(x+y)+" la resta es: "+(x-y));
+        
+ 
+    }
+}
+

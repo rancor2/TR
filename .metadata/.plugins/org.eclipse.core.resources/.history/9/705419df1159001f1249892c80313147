@@ -1,0 +1,17 @@
+package gola;
+
+public class hola {
+    
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 20;
+       for (int y = 0;y<10;y++) {
+    	   System.out.println("impresion: "+y);
+    	 
+       }
+        
+        
+ 
+    }
+}
+

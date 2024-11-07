@@ -1,0 +1,50 @@
+package gola;
+import java.util.Scanner;
+
+public class hola {
+	static public void main (String [] args) {
+		
+		// al final se ejecuta una operación que calcula el total del dia gastado las variables deben estar inicializadas para evitar errores en su ejecución
+		int n_parqueadoeros;
+		int confirmacion;
+		
+		Scanner lectura = new Scanner(System.in);// creo una clase lectura
+		
+		System.out.println("ingrese kilomentraje recorrido:");//enseño en terminal que ingrese el dato de kilometros
+		
+		float km_recorridos = lectura.nextFloat();//solicito el kilometraje recorrido
+		
+		System.out.println("ingrese valor del galon de gasolina:");//consulto precio dia de galon gas
+		
+		float  precio_gasolina = lectura.nextFloat(); // leo el precio de la gasolina 
+		
+		float costo_gasolina_litro = precio_gasolina/(3.78541f);// calculo el precio por litro y toca especificar en el valor decima que es un float
+		
+		
+		//aseguramos que use una entrada valida.
+		do {
+			System.out.println(" hoy utulizo un parking privado ?: \n pulse 1 para SI, 2 para NO ");
+			int confirmacion = lectura.nextInt();
+			
+		} while (confirmacion != 1 && confirmacion != 2);// mientras la opcion sea diferente de 1 o 2 el bucle se repite 
+		
+		if (confirmacion == 1 ) {
+			
+			System.out.println("Cuantos parqueaderos uso?");
+			int n_parqueadoeros = lectura.nextInt();
+		}
+		else {
+			int n_parqueadoeros = 0;
+		}
+		
+		System.out.println("ingrese cuantos peajes pago el día de hoy");
+		int n_peajes = lectura.nextInt();
+		
+		float gasto_total = precio_gasolina*km_recorridos+n_parqueadoeros*4000+n_peajes*11000;
+		
+		System.out.printf("teniendo en cuenta los datos ingresados su costo del uso del automovil es: \n %f", gasto_total);
+		
+		lectura.close();
+	
+	}
+}

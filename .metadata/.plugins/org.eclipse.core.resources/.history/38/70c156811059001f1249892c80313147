@@ -1,0 +1,14 @@
+package gola;
+public class hola {
+	
+	public static void main(String args[]) {
+		int x = 10;
+		int y = 20;
+		if (x>y) {
+			System.out.println("el mayor es: "+x);
+			
+			else System.out.println("el menor es: "+y);
+		}
+	}
+	
+}

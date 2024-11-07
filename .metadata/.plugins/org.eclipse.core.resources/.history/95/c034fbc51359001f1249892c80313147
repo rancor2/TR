@@ -1,0 +1,24 @@
+package gola;
+
+import java.util.Scanner;
+
+public class hola {
+    
+    public static void main(String[] args) {
+        // Crear un objeto Scanner dentro del método main
+        Scanner scanner = new Scanner(System.in);
+        
+        // Leer el valor desde el teclado
+        System.out.print("Ingrese el valor hasta donde quiere imprimir: ");
+        int numero = scanner.nextInt();
+        
+        // Imprimir los números desde 0 hasta numero-1
+        for (int y = 0; y < numero; y++) {
+            System.out.println("Impresión: " + y);
+        }
+        
+        // Cerrar el objeto Scanner
+        scanner.close();
+    }
+}
+

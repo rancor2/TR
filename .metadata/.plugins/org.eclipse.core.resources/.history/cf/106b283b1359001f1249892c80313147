@@ -1,0 +1,15 @@
+package gola;
+import java.util.Scanner;
+
+public class hola {
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("ingrese el valor hasta donde quiere imprir");
+	int numero = scanner.nextInt();
+	public static void main(String[] args) {
+       for (int y = 0;y<numero;y++) {
+    	   System.out.println("impresion: "+y);
+ 
+       }
+    }
+}
+

@@ -1,0 +1,24 @@
+package gola;
+import java.util.Scanner;
+
+public class hola {
+    public static void main(String[] args) throws Exception {
+        // Crear un objeto Scanner para la entrada del usuario
+        Scanner lectura = new Scanner(System.in);
+        
+        // Pedir al usuario que ingrese el radio
+        System.out.println("Ingrese radio:");
+        int radio = lectura.nextInt();
+        
+        // Calcular el área, el diámetro y la longitud de la circunferencia
+        double area = Math.PI * radio * radio;
+        int diametro = radio * 2;
+        double circunferencia = 2 * Math.PI * radio;
+        
+        // Imprimir los resultados formateados
+        System.out.printf("El área del círculo es %.2f, el diámetro es %d, y la longitud de la circunferencia es %.2f%n", area, diametro, circunferencia);
+        
+        // Cerrar el Scanner
+        lectura.close();
+    }
+}

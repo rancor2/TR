@@ -1,0 +1,26 @@
+
+package gola;
+
+public class hola {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("ingrese numero 1");
+
+        int x = scanner.nextInt();
+        
+        System.out.println("ingrese numero 2");
+        int y = scanner.nextInt();
+        
+
+        
+        
+
+       
+        System.out.println("la suma es "+(x+y)+" la resta es: "+(x-y));
+        
+ 
+    }
+}
+
